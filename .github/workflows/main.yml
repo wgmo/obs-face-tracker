@@ -13,6 +13,8 @@ on:
       - '**.md'
     branches:
       - main
+  workflow_dispatch:
+
 
 env:
   artifactName: ${{ contains(github.ref_name, '/') && 'artifact' || github.ref_name }}
